@@ -1,0 +1,40 @@
+# Function to calculate total and apply discount if needed
+def compute_total(quantity, price):
+    total = quantity * price
+
+    if total > 100000
+        total = total * 0.90   # Apply 10% discount
+
+    return total
+
+
+# Initialize accumulator
+grand_total = 0
+
+# Loop control signal
+answer - imput("Do you want to enter an order? (Yes to continue): ")
+
+while answer == "Yes":
+
+    # Input data
+    quantity = float(input("Enter quantity: "))
+    price = float(input("Enter price: "))
+
+    # Call function
+    total = compute_total(quantity, price)
+
+    # Add to running total
+    grand_total += total
+
+    #Display results
+    print("\nOrder Infomation")
+    print("Quantity:", quantity)
+    print("Price: $", format(price, ".2f"))
+    print("Total: $", format(total, ".2f"))
+
+    # Ask user if they  want to continue
+    answer = input("\nDo you want to enter another order? (Yes to continue): ")
+
+# Display final total after loop ends
+print("\nSummary")
+print("Total Extended Price: $", format(grand_total, ".2f"))
