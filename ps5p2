@@ -1,0 +1,35 @@
+# Function to calculate batting average
+def batting_average(hits, at_bats):
+    if at_bats == 0:
+        return 0
+    else:
+        return hits / at_bats
+
+
+# Initialize player counter
+player_count = 0
+
+# Loop control variable
+answer = input ("Do you want to enter a player? (Yes to continue): ")
+
+while answer == "Yes":
+
+    # Inpu player infomation
+    last_name = input("Enter player's last name: ")
+    hits = int(input("Enter number of hits: "))
+    at_bats = int(input("Enter number of at bats: "))
+
+    # Call function
+    average = batting_average(hits, at_bats)
+
+    # Display results
+    print("\nPlayer Infomation")
+    print("Last Name:", last_name)
+    print("Batting Average:", format(average, ".3f"))
+
+    # Ask if another player should be entered
+    answer = input("\nDo you want to enter another player? (Yes to continue): ")
+
+# Display total number of players entered
+print("\nSummary")
+print("Number of players entered:", player_count)
