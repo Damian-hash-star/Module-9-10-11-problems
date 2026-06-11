@@ -1,0 +1,42 @@
+# Function to computr next month's forecasted sales
+def forecast_sales(month, sales):
+
+    if month in ["Jan", "Feb", "Mar"]:
+        forecast_percent = 0.10
+    elif month in ["Apr", "May", "Jun"]:
+        forecast_percent = 0.15
+    elif month in ["Jul", "Aug", "Sep"]:
+        forecast_percent = 0.20
+    elif month in ["Oct", "Nov", "Dec"]:
+        forecast_percent = 0.25
+    else:
+        forecast_percent = 0
+
+    next_month_sales = sales * (1 + forecast_percent)
+
+    return next_month_sales
+
+# Prompt user before entering loop
+answer = input("Do you want to run the program? (Yes or No): ")
+
+while answer == "Yes"
+
+    # Input data
+    last_name = input("Enter last name: ")
+    month = input("Enter month(Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec):
+    sales = float(input("Enter sales amount: "))
+
+    # Call function
+    forecast = forecast_sales(month, sales)
+
+    # Display results
+    print("\nSales Forecast")
+    print("Last Name:", last_name)
+    print("Month", month)
+    print("Current Sales: $", format(sales, ".2f"))
+    print("Next Month Forecast: $", format(forecast, ".2f"))
+
+    # Ask if user wants to continue
+    answer = input ("\nDo you want to enter another record? (Yes or No): ")
+
+print("\nProgram Ended")
