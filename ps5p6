@@ -1,0 +1,22 @@
+# Function to calculate total points and average
+def calculate_scores(score1, score2, score3):
+    total_point = score1 + score2 + score3
+    average = total_point / 3
+    return total_point, average
+
+
+# Main program
+last_name = input("Enter student's last name: ")
+
+exam1 = float(input("Enter Exam 1 score: "))
+exam2 = float(input("Enter Exam 2 score: "))
+exam3 = float(input("Enter Exam 3 score: "))
+
+# Call the function
+total, avg = calculate_scores(exam1, exam2, exam3)
+
+# Display results
+print("\nStudent Infomation")
+print("Last Name:", last_name)
+print("Total Points:", total)
+print("Average Exam Score:", format(avg, ".2f"))
