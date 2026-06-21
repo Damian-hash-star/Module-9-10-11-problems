@@ -2,7 +2,7 @@
 def compute_total(quantity, price):
     total = quantity * price
 
-    if total > 100000
+    if total > 100000:
         total = total * 0.90   # Apply 10% discount
 
     return total
@@ -12,7 +12,7 @@ def compute_total(quantity, price):
 grand_total = 0
 
 # Loop control signal
-answer - imput("Do you want to enter an order? (Yes to continue): ")
+answer = input("Do you want to enter an order? (Yes to continue): ")
 
 while answer == "Yes":
 
