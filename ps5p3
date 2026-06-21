@@ -23,7 +23,7 @@ while answer == "Yes"
 
     # Input data
     last_name = input("Enter last name: ")
-    month = input("Enter month(Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec):
+    month = input("Enter month(Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec):")
     sales = float(input("Enter sales amount: "))
 
     # Call function
